@@ -33,8 +33,17 @@ This document records the main data sources and variables.
 **Coverage:** 2007-S1 to 2025-S2  
 
 **Variables to extract:**
-TBD
+- `geo`
+- `TIME_PERIOD`
+- `OBS_VALUE`
+- `OBS_FLAG`
 
+**Planned filters:**
+
+- `nrg_cons = GJ10000-99999` — Band I3
+- `tax = X_TAX` — excluding taxes and levies
+- `currency = EUR`
+- `unit = KWH`
 
 ---
 
@@ -75,6 +84,7 @@ The final analytical dataset is expected to contain one observation for each:
 
 `country × semester`
 
-The planned common period is:
+## Planned Analytical Periods
 
-`2008-S1 – 2025-S2`
+- Price trend analysis: 2008-S1 to 2025-S2
+- Main energy-mix analysis: 2017-S1 to 2025-S2

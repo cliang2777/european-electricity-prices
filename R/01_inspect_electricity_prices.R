@@ -1,4 +1,4 @@
-# Initial inspection of ‘nrg_pc_205’
+# Initial inspection of 'nrg_pc_205'
 
 library(readr)
 library(dplyr)
@@ -43,7 +43,7 @@ electricity_raw %>%
     last_period = max(TIME_PERIOD, na.rm = TRUE)
   )
 
-# Check missing electricity prices
+# Missing electricity prices
 electricity_raw %>%
   summarise(
     n_observations = n(),
