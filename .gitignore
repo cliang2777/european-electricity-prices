@@ -47,3 +47,6 @@ po/*~
 rsconnect/
 
 .DS_Store
+
+data/processed/*.duckdb
+data/processed/*.wal
