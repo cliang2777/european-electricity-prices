@@ -1,0 +1,38 @@
+
+\begingroup
+\centering
+\begin{tabular}{lcccc}
+   \tabularnewline \midrule \midrule
+   Dependent Variable: & \multicolumn{4}{c}{electricity\_price}\\
+                                                      & Pooled OLS    & Pooled interaction & Two-way FE   & Crisis interaction \\   
+   Model:                                             & (1)           & (2)                & (3)          & (4)\\  
+   \midrule
+   \emph{Variables}\\
+   Constant                                           & 0.043$^{***}$ & 0.044$^{***}$      &              &   \\   
+                                                      & (0.006)       & (0.009)            &              &   \\   
+   gas\_price                                         & 1.63$^{***}$  & 1.37$^{***}$       & 1.04$^{***}$ & 1.69$^{***}$\\   
+                                                      & (0.218)       & (0.305)            & (0.297)      & (0.440)\\   
+   gas\_share                                         &               & -0.010             & 0.004        & -0.006\\   
+                                                      &               & (0.032)            & (0.052)      & (0.051)\\   
+   gas\_price $\times$ gas\_share                     &               & 1.70               & 1.38         & 1.81$^{*}$\\   
+                                                      &               & (1.43)             & (1.05)       & (1.05)\\   
+   gas\_price $\times$ crisis                         &               &                    &              & -0.708$^{**}$\\   
+                                                      &               &                    &              & (0.280)\\   
+   gas\_price $\times$ gas\_share $\times$ crisis     &               &                    &              & -0.418\\   
+                                                      &               &                    &              & (0.287)\\   
+   \midrule
+   \emph{Fixed-effects}\\
+   country\_code                                      &               &                    & Yes          & Yes\\  
+   semester                                           &               &                    & Yes          & Yes\\  
+   \midrule
+   \emph{Fit statistics}\\
+   Observations                                       & 580           & 573                & 573          & 573\\  
+   R$^2$                                              & 0.53678       & 0.59041            & 0.83949      & 0.84298\\  
+   Within R$^2$                                       &               &                    & 0.29336      & 0.30869\\  
+   \midrule \midrule
+   \multicolumn{5}{l}{\emph{Clustered (country\_code) standard-errors in parentheses}}\\
+   \multicolumn{5}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+\end{tabular}
+\par\endgroup
+
+
