@@ -119,28 +119,12 @@ The main regression specifications include:
 - country and semester fixed effects
 - crisis-period interaction models
 
+
 Standard errors are clustered at the country level.
 
 The main model takes the form:
 
-$$
-ElectricityPrice_{it}
-=
-\beta_1 GasPrice_{it}
-+
-\beta_2 GasShare_{it}
-+
-\beta_3
-\left(
-GasPrice_{it} \times GasShare_{it}
-\right)
-+
-\alpha_i
-+
-\lambda_t
-+
-\varepsilon_{it}
-$$
+$$ ElectricityPrice_{it} = \beta_1 GasPrice_{it} + \beta_2 GasShare_{it} + \beta_3 \left( GasPrice_{it} \times GasShare_{it} \right) + \alpha_i + \lambda_t + \varepsilon_{it} $$
 
 where:
 
